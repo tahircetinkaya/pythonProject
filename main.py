@@ -75,7 +75,11 @@ model = GaussianNB()
 
 model.fit(features, kodlanmisTrafikDurumu)
 
+# ["Karlı", "Haftaiçi", "Sabah"]
 print(model.predict([[2, 1, 2]]))
+# Prints [1], meaning "Evet"
+# ["Güneşli", "Haftasonu", "Öğle"]
+print (model.predict([[0, 0, 1]]))
 
 
 
